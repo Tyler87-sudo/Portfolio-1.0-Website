@@ -4,16 +4,28 @@ body {
     border: 0;
 }
 
+.container {
+    display: flex;
+}
+
+.closeNav {
+    justify-content: center;
+}
+
 .navitem a {
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 80%;
-    padding: 8px 16px;
+    padding: 6px 20px;
+    margin-top: 5px;
     text-align: center;
     border: 1px solid;
+    border-radius: 10px;
 }
 
 .navitem:hover {
     /* From https://css.glass */
+    padding: 1px;
     background: rgba(37, 255, 110, 0.29);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(0px);
@@ -30,8 +42,45 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 25%;
+    position: relative;
+    border: 1px solid red;
+    border-radius: 5%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.navfooter {
+    border: 1px solid red;
+}
+
+.navheader {
+    border: 1px solid red;
+}
+
+.title {
+    padding: 0;
+    margin: 0 auto;
+    align-content: center;
+    border: 1px solid blue;
+    align-text: center;
+}
+
+header {
+    padding: 0;
+    margin: 0 auto;
+    width: 90%;
+    align-content: center;
+    border: 1px solid blue;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.navmenu {
+    width: 10%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     overflow: auto;
     /* From https://css.glass */
@@ -42,4 +91,5 @@ body {
     -webkit-backdrop-filter: blur(8.6px);
     border: 1px solid rgba(0, 255, 248, 0.44);
 }
+
 
