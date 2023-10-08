@@ -2,56 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>Portfolio 1.0 Tyler</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<div class="container">
 
     <header>
         <div class="title">
             <p>Hoi</p>
         </div>
     </header>
-    <nav id="yo" class="navmenu" aria-labelledby="navbar-toggle">
-       <button onclick="toggleNav()">Click Me</button>
 
-        <!--        <p class="navheader">Hoi</p>-->
-        <ul id="test" class="navbar">
-            <li class="navitem">
-                <a class="navtext" onClick="pageHighlighter()" href="index.html">Home</a>
-            </li>
-            <li class="navitem">
-                <a class="navtext" class="" href="cv.html">CV</a>
-            </li>
-            <li class="navitem">
-                <a class="navtext"  href="overmij.html">Over Mij</a>
-            </li>
-            <li class="navitem">
-                <a class="navtext"  href="projecten.html">Projecten</a>
-            </li>
-            <li class="navitem">
-                <a class="navtext" href="contact.html">Contact</a>
-            </li>
-        </ul>
-        <p class="navfooter">Hoi</p>
+    <input type="checkbox" id="hamburger-input" class="burger-shower" />
 
+    <label id="hamburger-menu" for="hamburger-input">
+<!--        navmenu class below -->
+        <nav class="sidebar-menu" id="yo">
+            <p class="navheader">Hoi</p>
+            <ul class="navbar" id="test">
+                <li class="navitem"><a class="navtext" href="index.html" onClick="pageHighlighter()">Home</a></li>
+                <li class="navitem"><a class="navtext" href="cv.html">CV</a></li>
+                <li class="navitem"><a class="navtext" href="overmij.html">Over Mij</a></li>
+                <li class="navitem"><a class="navtext" href="projecten.html">Projecten</a></li>
+                <li class="navitem"><a class="navtext" href="contact.html">Contact</a></li>
+            </ul>
+            <p class="navfooter">Hoi</p>
+        </nav>
+    </label>
 
-    </nav>
+    <div class="overlay"></div>
 
     <main>
-
     </main>
-
     <footer>
-
     </footer>
-
-
-</div>
 
 <script src="js/script.js"></script>
 
