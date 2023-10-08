@@ -1,0 +1,9 @@
+.navitem a {
+    display: block;
+    width: 60px;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0
+}
